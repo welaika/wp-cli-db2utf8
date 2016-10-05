@@ -1,9 +1,17 @@
 welaika/wp-cli-db2utf8
 ===============
 
+Alter WP tables char set and collation to UTF8.
+
+Used when default UTF8-mb4 is not an option for you staging or production
+environment - MT Grid anyone?
+
+Use at your own risk and **only on new installations** with fresh database:
+altering tables this way could lead to unwanted data loss.
+
 ### Install
 
-    git clone git@github.com:welaika/wp-cli-db2utf8.git ~/.wp-cli/packages/vendor/welaika/wp-cli-db2utf8
+    wp package install welaika/wp-cli-db2utf8
 
 ### Use
 
@@ -11,7 +19,7 @@ Use it from inside the root of a WordPress installation
 
     NAME
 
-      wp utf8mb4-2-utf8
+      wp db2utf8
 
     DESCRIPTION
 
@@ -19,4 +27,4 @@ Use it from inside the root of a WordPress installation
 
     SYNOPSIS
 
-      wp utf8mb4-2-utf8
+      wp db2utf8
