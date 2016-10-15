@@ -1,6 +1,8 @@
 welaika/wp-cli-db2utf8
 ===============
 
+[![Build Status](https://travis-ci.org/welaika/wp-cli-db2utf8.svg?branch=master)](https://travis-ci.org/welaika/wp-cli-db2utf8)
+
 Alter WP tables char set and collation to UTF8.
 
 Used when default UTF8-mb4 is not an option for you staging or production
