@@ -5,20 +5,9 @@ Feature: Test db2utf8 command
 
     When I run `wp db query "SELECT table_collation FROM information_schema.tables WHERE table_schema = DATABASE();"`
 
-    Then STDOUT should contain:
+    Then STDOUT should not contain:
       """
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
-      utf8mb4_unicode_ci
+      utf8_general_ci
       """
 
   Scenario: The updated charset on tables is utf8_general_ci
