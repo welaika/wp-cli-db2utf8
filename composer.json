@@ -1,6 +1,7 @@
 {
     "name": "welaika/wp-cli-db2utf8",
     "description": "",
+    "type": "wp-cli-package",
     "homepage": "https://github.com/welaika/wp-cli-db2utf8",
     "license": "MIT",
     "authors": [],
